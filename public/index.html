@@ -1,36 +1,95 @@
-<html lang="en">
+<html lang="en" data-theme="retro">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hey there~</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-blue-300">
-    <div class="flex h-16 items-center justify-between bg-white p-4">
-      <img src="./imgs/logo.svg" alt="logo" />
 
-      <div class="flex space-x-4 text-blue-500">
-        <a href="#">Home</a>
-        <a href="#">Features</a>
-        <a href="#">Community</a>
-        <a href="#">Support</a>
+    <div class="flex h-16 items-center justify-between bg-white p-4">
+      <a href = "#">
+        <img src="./imgs/logo.svg" alt="logo" />
+      </a>
+
+      <div class="hidden space-x-4 md:flex">
+        <div class = "join">
+          <a href = "#" class = "btn join-item">Home</a>
+          <a href = "#" class = "btn join-item">Features</a>
+          <a href = "#" class = "btn join-item">Community</a>
+          <a href = "#" class = "btn join-item">Support</a>
+        </div>
       </div>
 
-      <div class="flex space-x-2">
-        <button
-          class="rounded-md border-2 border-blue-500 px-4 py-2 text-blue-500 transition
-            duration-500 ease-in-out hover:border-green-500 hover:bg-green-500
-            hover:text-white"
-        >
-          Login
-        </button>
+      <div class="flex items-center justify-center space-x-2">
 
-        <button
-          class="rounded-md border-2 border-blue-500 bg-blue-500 px-4 py-2 text-white
-            hover:animate-spin"
-        >
-          Sign Up
-        </button>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn m-1">
+            Theme
+            <svg
+              width="12px"
+              height="12px"
+              class="inline-block h-2 w-2 fill-current opacity-60"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 2048 2048">
+              <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+            </svg>
+          </div>
+
+          <ul class="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl"">
+            <li>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="retro"
+                value="retro" />
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="aqua"
+                value="aqua" />
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="dracula"
+                value="dracula" />
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="luxury"
+                value="luxury" />
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="winter"
+                value="winter" />
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="lemonade"
+                value="lemonade" />
+            </li>
+          </ul>
+
+        </div>
+          <button class="btn btn-outline">Login</button>
+
+          <button class="btn btn-primary">Sign Up</button>
       </div>
     </div>
 
